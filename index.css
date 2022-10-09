@@ -1,0 +1,159 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+svg {
+  width: 80px;
+  height: 80px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.first-nav ul {
+  margin: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.second-nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.first-nav ul a {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.second-nav ul a {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.responsive-menu {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .first-nav {
+    display: none;
+  }
+
+  .second-nav {
+    display: none;
+  }
+  .responsive-menu {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .responsive-menu svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Hero */
+
+.upper-part {
+  height: auto;
+  background-image: url("https://www.kit.edu/img/header_dossier%20studium_1920p.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+  color: white;
+}
+
+.upper-part h1 {
+  width: 50vw;
+  font-size: 4.5rem;
+  border-bottom: 5px solid #00876c;
+}
+
+.upper-para {
+  margin: 30px 0px;
+  font-weight: 300;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.hero-card {
+  background-color: #00876c;
+  width: 40vw;
+  height: 130px;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+.hero-card h2 {
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+.hero-card p {
+  font-weight: 200;
+  padding: 0px 0;
+}
+
+.responsive-hero-card {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .upper-part {
+    width: 100%;
+  }
+
+  .upper-part h1 {
+    width: 100%;
+    font-size: 3rem;
+  }
+
+  .upper-para {
+    width: 100%;
+  }
+
+  .hero-card {
+    display: none;
+  }
+
+  .responsive-hero-card {
+    display: block;
+  }
+
+  .responsive-hero-card h2 {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+}
