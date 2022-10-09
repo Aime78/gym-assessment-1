@@ -16,7 +16,6 @@ body {
 
 header {
   width: 100%;
-  position: fixed;
   background-color: white;
 }
 
@@ -374,5 +373,58 @@ ul a {
   .card-section {
     display: block;
     width: 100%;
+  }
+}
+
+.events {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+.section-events {
+  padding: 20px;
+}
+
+.events-container {
+  display: flex;
+}
+
+.first-part-events {
+  width: 50%;
+}
+
+.second-part-events {
+  padding: 20px;
+  width: 50%;
+}
+
+.second-part-events h1 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.second-part-events p {
+  font-weight: 300;
+}
+
+.image-event {
+  background-image: url("https://www.kit.edu/admin/events/images/ajax/image.php?ev_id=36182&format=widget");
+  background-position: top;
+  background-size: cover;
+  height: 40vh;
+}
+
+@media (max-width: 700px) {
+  .events-container {
+    flex-direction: column;
+  }
+
+  .first-part-events {
+    width: 100%;
+  }
+
+  .second-part-events {
+    width: 100%;
+    padding-left: 0;
   }
 }
